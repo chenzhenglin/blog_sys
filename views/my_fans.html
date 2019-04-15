@@ -1,0 +1,75 @@
+
+{{extend './_layout/layout.html'}}
+{{block 'title'}}{{ 我的 }}{{/block}}
+{{block 'css'}}
+<link href="/public/css/my_common.css" rel="stylesheet">
+<link href="/public/css/my_fav.css" rel="stylesheet">
+{{/block}}
+{{block 'content'}}
+{{include './_partial/header.html'}}
+<!-- Begin page content -->
+<main role="main" class="container">
+    <div class="row">
+        <div>
+            <!--{{include './_partial/profile_basic.html'}}-->
+            <ul class="list-group list-group-flush list-border">
+                <a href="/my/profile" class="left_list_item list-group-item">个人资料</a>
+                <a href="/my/fav" class="left_list_item list-group-item">我的收藏</a>
+                <a href="/my/focus" class="left_list_item list-group-item">我的关注</a>
+                <a href="#" class="left_list_item list-group-item bg-red text-white">我的粉丝</a>
+                <a href="/my/blog" class="left_list_item list-group-item">我的博客</a>
+            </ul>
+        </div>
+        <div class="col-container col">
+            <section class="info-sec">
+                <h3 class="title" style="float: left">
+                    <span>我的粉丝</span>
+                    <span style="font-size: 16px;padding-left: 30px">共<i style="font-size: 18px;color: red">188</i>位</span>
+                </h3>
+                <div>
+                    <table class="fav-list table table-hover">
+                        <tbody>
+                        <tr class="tr-first">
+                            <td colspan="7">
+                                <span class="fav-title">
+                                    <a href="">
+                                        <img width="50" height="50" src="../public/img/avatar-default.png" alt="../public/img/avatar-default.png" class="avatar rounded-circle">
+                                        <i>zhangsan</i>
+                                    </a>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="7">
+                                <span class="fav-title">
+                                    <a href="">
+                                        <img width="50" height="50" src="../public/img/avatar-default.png" alt="../public/img/avatar-default.png" class="avatar rounded-circle">
+                                        <i>lisi</i>
+                                    </a>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="7">
+                                <span class="fav-title">
+                                    <a href="">
+                                        <img width="50" height="50" src="../public/img/avatar-default.png" alt="../public/img/avatar-default.png" class="avatar rounded-circle">
+                                        <i>wangwu</i>
+                                    </a>
+                                </span>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </div>
+</main>
+{{/block}}
+{{block 'script'}}
+<script>
+
+</script>
+
+{{/block}}

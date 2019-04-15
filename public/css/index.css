@@ -1,0 +1,64 @@
+/*初始化样式 开始*/
+/*div,h1,h2,h3,h4,h5,h6,p,ul,li,ol,dl,dt,dd{
+    padding: 0;
+}*/
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background-color: #E1E1E1;
+}
+.footer {
+    position: absolute;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 100px;
+    line-height: 80px; /* Vertically center the text there */
+    background-color: #f5f5f5;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+    padding: 70px 15px 0;
+}
+
+.footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+code {
+    font-size: 80%;
+}
+/*初始化样式 结束*/
+.nav-bg {
+    background-color: #F6F6F6;
+}
+.media-ul {
+    padding: 10px 0 0 0;
+}
+.media-ul > .media-li {
+    border-bottom: solid 1px #F0F0F0;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+.head-title {
+    padding-left: 5px;
+}
+.content-sec {
+    background-color: #FFFFFF;
+}
+.pagination-ul {
+    padding: 0 0 40px 5px;
+}

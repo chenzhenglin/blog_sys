@@ -1,0 +1,103 @@
+
+/*信息显示区  start*/
+.info-sec > div {
+    float: left;
+}
+
+.info-right {
+    padding-left: 15px;
+    width: 80%;
+}
+
+.info-li-item{
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+/*信息显示区  end*/
+
+/*头像显示区 start*/
+.p-avatar {
+    text-align: center;
+}
+.modifier-info {
+    color: #00A4FF;
+    font-size: 14px;
+}
+.modifier-info:hover {
+    color: #599FEA;
+    cursor:pointer;
+}
+/*头像显示区 end*/
+
+/*修改资料弹窗  start*/
+.form-group {
+    margin-bottom: .5rem;
+}
+/*修改资料弹窗  end*/
+
+/*文件上传弹窗  start*/
+
+.file-area {
+    width:90%;
+    height:15rem;
+    line-height: 12rem;
+    background:#F7F7F7;
+    border:1px dashed #E3E3E3;
+    margin: 20px auto;
+    text-align:center;
+}
+.file-area:hover {
+    cursor:pointer;
+}
+.progress-div {
+    display: none;
+    position: relative;
+    left: 50%;
+    width: 20%;
+    margin-left: -10%;
+    margin-top: 5px;
+}
+.progress {
+    height: 0.75rem;
+    font-size: 0.5rem;
+    background-color: #e9ecef;
+    border-radius: 0.15rem;
+    /*position: relative;
+    left: 50%;
+    width: 20%;
+    margin-left: -10%;*/
+}
+
+/*icon-font  ---  start*/
+@font-face {
+    font-family: 'icon-upload';
+    src:  url('../icon-font/fonts/icomoon.eot?8a2xah');
+    src:  url('../icon-font/fonts/icomoon.eot?8a2xah#iefix') format('embedded-opentype'),
+    url('../icon-font/fonts/icomoon.ttf?8a2xah') format('truetype'),
+    url('../icon-font/fonts/icomoon.woff?8a2xah') format('woff'),
+    url('../icon-font/fonts/icomoon.svg?8a2xah#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-folder"], [class*=" icon-folder"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icon-upload' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-folder-upload::before {
+    content: "\e934";
+}
+/*icon-font  ---  end*/
+
+/*文件上传弹窗  end*/

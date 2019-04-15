@@ -1,0 +1,59 @@
+
+{{extend './_layout/layout.html'}}
+{{block 'title'}}{{主页}}{{/block}}
+{{block 'css'}}
+<link href="/public/css/index.css" rel="stylesheet">
+{{/block}}
+{{block 'content'}}
+{{include './_partial/header.html'}}
+<!-- Begin page content -->
+<main role="main" class="container">
+    <div class="row">
+        <div class="col">
+            <nav class="nav nav-bg nav-pills">
+                <a class="nav-link" href="#">全部</a>
+                <a class="nav-link active" href="#">精华</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </nav>
+            <section class="content-sec">
+                <ul class="media-list media-ul">
+                    {{each topics}}
+                    <li class="media media-li">
+                        <div class="media-left">
+                            <a href="/personal">
+                                <img width="40" height="40" class="media-object" src="/public/img/avatar-default.png" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading head-title"><a href="/topics/{{$value.id}}">Media heading</a></h4>
+                            <p class="head-title">sueysok 回复了问题 • 2 人关注 • 1 个回复 • 187 次浏览 • 2017-10-20 13:45</p>
+                        </div>
+                    </li>
+                    {{/each}}
+                </ul>
+                <ul class="pagination pagination-ul">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div class="col-4 d-none d-md-block">123</div>
+    </div>
+
+</main>
+{{/block}}
+{{block 'script'}}{{/block}}

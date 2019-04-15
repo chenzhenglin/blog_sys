@@ -1,0 +1,13 @@
+
+个人资料页面：profile.html
+    'my'后续换成用户id
+    1、个人资料跳转方式GET：/my/profile
+    2、页面内涉及的链接跳转：
+        （1）主页：/my/main
+        （2）收藏：/my/fav
+        （3）关注：/my/focus
+        （4）粉丝：/my/fans
+        （5）博客：/my/blog
+    3、异步POST请求：
+        （1）修改个人资料：/my/modify
+        （2）修改头像：/my/avatar

@@ -1,0 +1,37 @@
+.fav-list {
+    /*min-height: 22rem;*/
+}
+/*
+.fav-list >li >span {
+    padding-right: 20px;
+}*/
+
+.table {
+    width: 95%;
+}
+.table th, .table td {
+    border: 0;
+}
+.table tr:not(.tr-first) {
+    border-top: 1px solid #E1E1E1;
+}
+.fav-title {
+    font-size: 16px;
+    display: inline-block;
+    width: 82%;
+}
+
+.date {
+    color: #666;
+    padding-right: 15px;
+
+}
+.del {
+    color: #00A4FF;
+    font-size: 14px;
+}
+.del:hover {
+    color: #599FEA;
+    cursor:pointer;
+}
+

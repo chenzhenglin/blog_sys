@@ -1,0 +1,75 @@
+
+{{extend './_layout/layout.html'}}
+{{block 'title'}}{{ 我的 }}{{/block}}
+{{block 'css'}}
+<link href="/public/css/my_common.css" rel="stylesheet">
+<link href="/public/css/my_fav.css" rel="stylesheet">
+{{/block}}
+{{block 'content'}}
+{{include './_partial/header.html'}}
+<!-- Begin page content -->
+<main role="main" class="container">
+    <div class="row">
+        <div>
+            <!--{{include './_partial/profile_basic.html'}}-->
+            <ul class="list-group list-group-flush list-border">
+                <a href="/my/profile" class="left_list_item list-group-item">个人资料</a>
+                <a href="/my/fav" class="left_list_item list-group-item">我的收藏</a>
+                <a href="/my/focus" class="left_list_item list-group-item">我的关注</a>
+                <a href="/my/fans" class="left_list_item list-group-item">我的粉丝</a>
+                <a href="#" class="left_list_item list-group-item bg-red text-white">我的博客</a>
+            </ul>
+        </div>
+        <div class="col-container col">
+            <section class="info-sec">
+                <h3 class="title" style="float: left">我的博客</h3>
+                <div>
+                    <!--<ul class="fav-list list-group list-group-flush">
+                        <li class="list-group-item">
+                            <span class="title">Cras justo odio</span>
+                            <span class="title">2019-04-14</span>
+                            <span class="title">取消</span>
+                        </li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>-->
+
+                    <table class="fav-list table table-hover">
+                        <tbody>
+                        <tr class="tr-first">
+                            <td colspan="7">
+                                <span class="fav-title"><a href="">我写的第一个博客啦啦啦</a></span>
+                                <span class="date">2019-4-14</span>
+                                <span class="del">管理</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="7">
+                                <span class="fav-title"><a href="">我写的第一个博客啦啦啦</a></span>
+                                <span class="date">2019-4-14</span>
+                                <span class="del">管理</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="7">
+                                <span class="fav-title"><a href="">我写的第一个博客啦啦啦我写的第一个博客啦啦啦我写的第一个博客啦啦啦</a></span>
+                                <span class="date">2019-4-14</span>
+                                <span class="del">管理</span>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </div>
+</main>
+{{/block}}
+{{block 'script'}}
+<script>
+
+</script>
+
+{{/block}}

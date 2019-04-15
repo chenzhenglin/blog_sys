@@ -1,0 +1,55 @@
+{{extend './_layout/layout.html'}}
+{{block 'title'}}{{写博客}}{{/block}}
+{{block 'css'}}
+<link rel="stylesheet" href="/node_modules/tui-editor/dist/tui-editor.css" />
+<link rel="stylesheet" href="/node_modules/codemirror/lib/codemirror.css">
+<link rel="stylesheet" href="/node_modules/highlight.js/styles/github.css">
+<link rel="stylesheet" href="/node_modules/tui-editor/dist/tui-editor.css">
+<link rel="stylesheet" href="/node_modules/tui-editor/dist/tui-editor-contents.css">
+<link rel="stylesheet" href="/node_modules/tui-color-picker/dist/tui-color-picker.css">
+<link rel="stylesheet" href="/node_modules/tui-chart/dist/tui-chart.css">
+<link rel="stylesheet" href="/public/css/edit.css">
+{{/block}}
+{{block 'content'}}
+<div class="container" style="margin-top:30px;margin-bottom:50px;">
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="请输入文章标题" aria-label="请输入文章标题" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button">发布文章</button>
+            <span class="input-group-text"><a href="">个人中心</a></span>
+        </div>
+    </div>
+    <div class="code-html">
+        <div id="editSection"></div>
+    </div>
+</div>
+{{/block}}
+{{block 'script'}}
+<script src="/node_modules/markdown-it/dist/markdown-it.js"></script>
+<script src="/node_modules/to-mark/dist/to-mark.js"></script>
+<script src="/node_modules/tui-code-snippet/dist/tui-code-snippet.js"></script>
+<script src="/node_modules/tui-color-picker/dist/tui-color-picker.js"></script>
+<script src="/node_modules/codemirror/lib/codemirror.js"></script>
+<script src="/node_modules/highlight.js/lib/highlight.js"></script>
+<script src="/node_modules/squire-rte/build/squire-raw.js"></script>
+
+
+<!--<script src="/node_modules/plantuml-encoder/lib/plantuml-encoder.js"></script>-->
+<script src="/public/lib/plantuml-encoder/plantuml-encoder.min.js"></script>
+<script src="/node_modules/raphael/raphael.js"></script>
+<script src="/node_modules/tui-chart/dist/tui-chart.js"></script>
+<script src="/node_modules/tui-editor/dist/tui-editor-Editor.js"></script>
+<!--<script src="/public/lib/tui-editor/tui-editor-Editor-all.min.js"></script>-->
+
+<script class="code-js">
+    $(new tui.Editor({
+        el: document.querySelector('#editSection'),
+        initialEditType: 'markdown',
+        previewStyle: 'vertical',
+        height: '500px',
+        // 加上这个就能解决报错问题
+        codeBlockLanguages: ['ruby', 'PHP', 'javascript'],
+    }));
+</script>
+
+{{/block}}
